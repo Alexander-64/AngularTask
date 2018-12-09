@@ -1,0 +1,31 @@
+.courses {
+    border: 1px solid black;
+
+    &__control-panel {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    &__item{
+        display: flex;
+        margin: 10px;
+        border: 1px solid black;
+        
+        &__content {
+            padding: 10px;
+            flex: 1 1 auto;
+
+            &__title {
+                height: 30px;
+            }
+        }
+
+        &__buttons {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
