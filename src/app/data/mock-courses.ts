@@ -30,3 +30,15 @@ export const Courses: Course[] = [
             'some time after the American Civil War',
     },
 ];
+
+export const AddedCourse: Course = {
+    id: 4,
+    title: 'Pulp Fiction',
+    creationDate: '1994-09-01T19:50:20.439856+00:00',
+    duration: 154,
+    description: 'TPulp Fiction is a 1994 American crime film written and directed by Quentin' +
+        ' Tarantino; it is based on a story by Tarantino and Roger Avary.[4] Starring John Travolta' +
+        ', Samuel L. Jackson, Bruce Willis, Tim Roth, Ving Rhames, and Uma Thurman, it tells several' +
+        ' stories of criminal Los Angeles. The films title refers to the pulp magazines and hardboiled' +
+        'crime novels popular during the mid-20th century, known for their graphic violence and punchy dialogue.',
+};

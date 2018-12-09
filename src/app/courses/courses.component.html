@@ -3,20 +3,11 @@
     <app-search></app-search>
     <button>Add course</button>
   </div>
-  <div *ngFor="let course of courses" class="courses__item">
-    <div class="courses__item__content">
-      <div (click)="onSelect(hero)" class="courses__item__content__title">
-        <span> {{course.title}}</span>
-        <span>{{course.duration}}</span>
-        <span>{{course.creationDate | date}}</span>
-      </div>
-      <div>
-        {{course.description}}
-      </div>
-    </div>
-    <div class="courses__item__buttons">
-      <button>Edit</button>
-      <button>Delete</button>
-    </div>
-  </div>
+    <app-course 
+      *ngFor="let course of courses"
+      [course]="course"
+      (delete)="onDelete($event)"
+    >
+    </app-course>
+    <app-load-more></app-load-more>
 </div>

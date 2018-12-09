@@ -10,6 +10,7 @@ import { BreadcrumbsComponent } from '../app/shared/components/breadcrumbs/bread
 import { CoursesComponent } from './courses/courses.component';
 import { SearchComponent } from './courses/search/search.component';
 import { CourseComponent } from './courses/course/course.component';
+import { LoadMoreComponent } from './courses/load-more/load-more.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CourseComponent } from './courses/course/course.component';
     CoursesComponent,
     BreadcrumbsComponent,
     SearchComponent,
-    CourseComponent
+    CourseComponent,
+    LoadMoreComponent
   ],
   imports: [
     BrowserModule,

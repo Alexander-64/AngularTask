@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Courses } from '../data/mock-courses';
-import Course from '../shared/entities/Course';
+import { Courses, AddedCourse } from '../data/mock-courses';
 
 @Component({
   selector: 'app-courses',
@@ -9,15 +8,13 @@ import Course from '../shared/entities/Course';
 })
 export class CoursesComponent implements OnInit {
   courses = Courses;
-  selectedCourse: Course;
 
   constructor() { }
 
   ngOnInit() {
+    this.courses.push(AddedCourse);
   }
-
-  onSelect(course: Course): void {
-    this.selectedCourse = course;
+  onDelete(courseId: number) {
+    console.log(courseId);
   }
-
 }
