@@ -1,6 +1,4 @@
 <div>
-  <input
-    #searchQuery
-  >
-  <button (click)="setSearchQuery(searchQuery.value)">Search</button>
+  <input [(ngModel)]="searchQuery">
+  <button (click)="setSearchQuery()">Search</button>
 </div>

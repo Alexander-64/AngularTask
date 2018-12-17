@@ -6,14 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./search.component.less']
 })
 export class SearchComponent implements OnInit {
-  searchQuery = '';
+  searchQuery: string = '';
 
-  setSearchQuery(searchQuery: string) {
-    if (searchQuery && searchQuery !== this.searchQuery) {
-      this.searchQuery = searchQuery;
+  setSearchQuery() {
       console.log(this.searchQuery);
-    }
   }
+
   constructor() { }
 
   ngOnInit() {
