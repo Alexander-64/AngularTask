@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
 
 import { CoursesComponent } from './courses.component';
 import { SearchComponent} from './search/search.component';
@@ -16,7 +17,10 @@ describe('CoursesComponent', () => {
         SearchComponent,
         CourseComponent,
         LoadMoreComponent,
-      ]
+      ],
+      imports: [
+        FormsModule
+      ],
     })
     .compileComponents();
   }));
