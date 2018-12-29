@@ -1,6 +1,6 @@
 <div class="course">
   <div class="course__content">
-    <div (click)="onSelect(hero)" class="course__content__header">
+    <div  class="course__content__header">
       <span class="course__content__header__title"> {{course.title}}</span>
       <span class="course__content__header__duration">{{course.duration}}m. </span>
       <span class="course__content__header__creation-date">{{course.creationDate | date}}</span>
@@ -11,6 +11,6 @@
   </div>
   <div class="course__buttons">
     <button>Edit</button>
-    <button (click)="onDelete()">Delete</button>
+    <button class="course__buttons__delete" (click)="onDelete()">Delete</button>
   </div>
 </div>
